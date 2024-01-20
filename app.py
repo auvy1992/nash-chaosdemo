@@ -15,6 +15,7 @@ r = redis.StrictRedis(host=myHostname, port=6380,
 
 @app.route('/')
 def index():
+  
    result = r.ping()
    print("Ping returned : " + str(result))
 
