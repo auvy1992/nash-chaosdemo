@@ -13,6 +13,10 @@ r = redis.StrictRedis(host=myHostname, port=6380,
                       password=myPassword, ssl=True)
 
 
+@app.route('/loaderio-c4f75562dbae5ba7a16d3b3b430ee149')
+def loader_io():
+  return "loaderio-c4f75562dbae5ba7a16d3b3b430ee149"
+
 @app.route('/')
 def index():
   
